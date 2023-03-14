@@ -1,8 +1,27 @@
 import React, { useEffect, useState } from "react";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	Link
+} from "react-router-dom";
+
+
 
 import "./AppContainer.css";
 
 import Landing from "../pages/Landing.jsx";
+import CreateEvent from "../pages/CreateEvent.jsx";
+
+
+
+/*
+TODO:
+	Create Action
+
+
+*/
+
 
 function checkStorage(name) {
 	const isLocalStorageEmpty = localStorage.getItem(name);
@@ -30,10 +49,15 @@ export default function AppContainer () {
 	}, [])	
 
 	return (
-	<div className="app-container">
-		<Landing />
-	
-	</div>
+
+	<Router>
+		<div className="app-container">
+			<Routes>
+				<Route exact path="/" element={<Landing />} />
+				<Route exact path="/create_event" element={<CreateEvent />} />	
+			</Routes>
+		</div>
+	</Router>
 
 	)
 }
