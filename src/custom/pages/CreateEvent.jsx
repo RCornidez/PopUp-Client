@@ -33,7 +33,7 @@ return (
 		<p className="create-event--title">Create Event</p>
 		<form className="create-event--form"onSubmit={handleSubmit}>
 			<label className="create-event--field">
-				When are we calling this thing?
+				What are we calling this thing?
 			<input type="text" value={name} onChange={(event) => setName(event.target.value)} />
 			</label>
 			<label className="create-event--field">

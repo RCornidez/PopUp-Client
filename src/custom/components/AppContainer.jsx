@@ -11,7 +11,10 @@ import {
 import "./AppContainer.css";
 
 import Landing from "../pages/Landing.jsx";
+import Host from "../pages/Host.jsx";
 import CreateEvent from "../pages/CreateEvent.jsx";
+import Guest from "../pages/Guest.jsx";
+import AddEvent from "../pages/AddEvent.jsx";
 
 
 
@@ -54,7 +57,10 @@ export default function AppContainer () {
 		<div className="app-container">
 			<Routes>
 				<Route exact path="/" element={<Landing />} />
+				<Route exact path="/host" element={<Host />} />
 				<Route exact path="/create_event" element={<CreateEvent />} />	
+				<Route exact path="/guest" element={<Guest />} />
+				<Route exact path="/add_event" element={<AddEvent />} />	
 			</Routes>
 		</div>
 	</Router>
