@@ -10,15 +10,18 @@ return (
 		<p className="prompt">Let's Party</p>
 			
 		<div className="party-list">
+			<Link to="/edit_event">
 			<div className="party">
 				<p className="party--title">Downtown</p>
 				<p className="party--timer">3D 12:21:03</p>
 			</div>
+			</Link>
+			<Link to="/edit_event">
 			<div className="party">
 				<p className="party--title">Oro Valley</p>
 				<p className="party--timer">3D 12:21:03</p>
-
 			</div>
+			</Link>
 			<Link to="/create_event">
 				<button className="party-add">+</button>
 			</Link>
